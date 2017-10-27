@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Try me Original</string>
+    <string name="app_name">Try Me Original</string>
+    <string name="try_me_button">Try Me!</string>
 </resources>
