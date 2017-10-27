@@ -21,10 +21,18 @@ public class MainActivity extends AppCompatActivity {
 
         //Change the tile of the button
         mButton.setText(R.string.button_name);
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mTextView.setVisibility(View.VISIBLE);
+                mTextView.setText(R.string.show_text);
+            }
+        });
     }
 
-    public void ShowMe(View view){
-        mTextView.setVisibility(View.VISIBLE);
-        mTextView.setText(R.string.show_text);
-    }
+//    public void ShowMe(View view){
+//        mTextView.setVisibility(View.VISIBLE);
+//        mTextView.setText(R.string.show_text);
+//    }
 }
