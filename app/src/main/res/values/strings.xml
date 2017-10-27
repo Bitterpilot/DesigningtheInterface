@@ -2,4 +2,5 @@
     <string name="app_name">Designing the Interface</string>
     <string name="button_name">Show Me</string>
     <string name="show_text">Show Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
 </resources>
