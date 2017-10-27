@@ -3,4 +3,5 @@
     <string name="convert_to_inches">Convert to Inches</string>
     <string name="enter_in_meters">Enter in Meters</string>
     <string name="image_of_a_ruler">Image of a ruler.</string>
+    <string name="error_message">Please enter a valid number</string>
 </resources>

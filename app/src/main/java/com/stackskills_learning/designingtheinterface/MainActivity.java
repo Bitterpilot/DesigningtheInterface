@@ -1,5 +1,6 @@
 package com.stackskills_learning.designingtheinterface;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,11 +34,18 @@ public class MainActivity extends AppCompatActivity {
                 double multiplier = 39.37;
                 double result = 0.0;
 
-                double meterValue = Double.parseDouble(enterMeters.getText().toString());
-                result = meterValue * multiplier;
+                if (enterMeters.getText().toString().equals("")){
 
-                resultTextView.setText(String.format("%.2f",result) + " inches");
-                                            //         ^ code inherited from C++
+                    resultTextView.setText(R.string.error_message);
+                    resultTextView.setTextColor(Color.RED);
+
+                }else {
+
+                    double meterValue = Double.parseDouble(enterMeters.getText().toString());
+                    result = meterValue * multiplier;
+
+                    resultTextView.setText(String.format("%.2f", result) + " inches");
+                }                             //         ^ code inherited from C++
             }
         });
 
