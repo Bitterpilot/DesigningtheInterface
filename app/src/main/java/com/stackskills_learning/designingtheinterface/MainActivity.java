@@ -31,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //conversion logic
                 double multiplier = 39.37;
-                double resault = 0.0;
+                double result = 0.0;
 
                 double meterValue = Double.parseDouble(enterMeters.getText().toString());
-                resault = meterValue * multiplier;
+                result = meterValue * multiplier;
 
-                resultTextView.setText(Double.toString(resault) + " inches");
+                resultTextView.setText(String.format("%.2f",result) + " inches");
+                                            //         ^ code inherited from C++
             }
         });
 
